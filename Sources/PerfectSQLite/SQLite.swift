@@ -23,6 +23,7 @@ import PerfectCSQLite3
 import SwiftGlibc
 #else
 import SQLite3
+import Darwin
 #endif
 
 /// This enum type indicates an exception when dealing with a SQLite database

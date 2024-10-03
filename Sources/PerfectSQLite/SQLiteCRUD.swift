@@ -346,7 +346,7 @@ class SQLiteGenDelegate: SQLGenDelegate {
 		}
 		return "\(name) \(typeName)\(addendum)"
 	}
-	func getBinding(for expr: Expression) throws -> String {
+	func getBinding(for expr: CRUDExpression) throws -> String {
 		bindings.append(("?", expr))
 		return "?"
 	}
